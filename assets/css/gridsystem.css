@@ -24,49 +24,61 @@
 /*  GRID  */
 .column-12 {
 	width: 100%;
+	margin: 0;
 }
 
 .column-11 {
-  	width: 91.53%;
+	width: 91.53%;
+	margin: 0;
 }
 .column-10 {
   	width: 83.06%;
+	margin: 0;
 }
 
 .column-9 {
-  	width: 74.6%;
+	width: 74.6%;
+	margin: 0;
 }
 
 .column-8 {
-  	width: 66.13%;
+	width: 66.13%;
+	margin: 0;
 }
 
 .column-7 {
-  	width: 57.66%;
+	width: 57.66%;
+	margin: 0;
 }
 
 .column-6 {
-  	width: 49.2%;
+	width: 49.2%;
+	margin: 0;
 }
 
 .column-5 {
-  	width: 40.73%;
+	width: 40.73%;
+	margin: 0;
 }
 
 .column-4 {
-  	width: 32.26%;
+	width: 32.26%;
+	margin: 0;
 }
 
 .column-3 {
-  	width: 23.8%;
+	width: 23.8%;
+	margin: 0;
 }
 
 .column-2 {
-  	width: 15.33%;
+	width: 15.33%;
+	margin: 0;
 }
 
 .column-1 {
-  	width: 6.866%;
+	width: 6.866%;
+	margin: 0;
 }
 
 /*  FULL WIDTH ON SCREEN BELOW 480PX */

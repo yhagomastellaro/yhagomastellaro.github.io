@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="assets/css/styles-dark.css" id="mainStyle">
+    <link rel="stylesheet" href="assets/css/gridsystem.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    
+    <script src="assets/js/jquery-3.5.1.js"></script>
+
+    <script src="https://kit.fontawesome.com/519be1e9b5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- CSS SWITCH / DARK LIGHT -->
+    <div class="wrapper">
+        <a class="navbar-link" href="#" onclick="changeMode()">
+            <p id="modeTheme">LIGHT</p>
+        </a>
+    </div>
+
+    <!-- NAV -->
+    <div class="navbar" id="navbar">
+        <ul class="navbar-item-list">
+            <li class="navbar-item">
+                <a class="navbar-link" href="index.html"> HOME</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-link" href="education.html"> EDUCATION</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-link" href="portfolio.html"> PORTFOLIO</a>
+            </li>
+            <li class="navbar-item">
+                <a class="navbar-link active" href="contact.html"> CONTACT</a>
+            </li>
+        </ul>
+    </div>
+
+    
+
+    <!-- EDUCATION -->
+    <div class="container">
+        <div class="section intro">
+            
+            <div class="col column-6 info">
+                <h1>Get in touch!</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reiciendis facere voluptatum, ex, tempore iusto ipsam fugit velit sit nesciunt, cumque sunt accusamus? Facere corrupti, quaerat expedita explicabo nisi eligendi!</h3>
+            </div>
+
+            <div class="col column-5 card">
+                
+                
+                <div class="card-item">
+
+                    <div class="form-success">
+                        <h2>Message sent.</br>Thank you!</h2></br></br></h2>
+                    </div>
+
+                    <form action="sendMail.php" method="post" name="contact" id="contact" class="form">
+                        
+                        <div class="col column-12">
+                            <label for="inputName" class="form-label">NAME</label>
+                            <input type="text" class="form-input" name="inputName" placeholder="Name">
+                        </div>
+
+                        <div class="col column-12">
+                            <label for="inputEmail" class="form-label">EMAIL</label>
+                            <input type="email" class="form-input" name="inputEmail" placeholder="Email">
+                        </div>
+
+                        <div class="col column-12">
+                            <label for="inputSubject" class="form-label">SUBJECT</label>
+                            <input type="text" class="form-input" name="inputSubject" placeholder="Subject">
+                        </div>
+
+                        <div class="col column-12">
+                            <label for="inputSubject" class="form-label">MESSAGE</label>
+                            <textarea class="form-input form-text-area" name="inputMessage" rows="5" placeholder="Your message"></textarea>
+                        </div>
+
+                        <div class="col column-12">
+                            <button type="submit" class="form-btn">Send Message</button>
+                        </div>
+
+                    </form>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

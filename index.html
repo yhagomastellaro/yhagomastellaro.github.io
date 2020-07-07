@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
 
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles-dark.css" id="mainStyle">
     <link rel="stylesheet" href="assets/css/gridsystem.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    
     <script src="assets/js/jquery-3.5.1.js"></script>
 
     <script src="https://kit.fontawesome.com/519be1e9b5.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
+
+    <!-- CSS SWITCH / DARK LIGHT -->
+    <div class="wrapper">
+        <a class="navbar-link" href="#" onclick="changeMode()">
+            <p id="modeTheme">LIGHT</p>
+        </a>
+    </div>
 
     <!-- NAV -->
     <div class="navbar" id="navbar">
@@ -65,9 +71,11 @@
                 </ul>
 
             </div>
+
             <div class="col column-6 picture">
                 <img class="profile-picture" src="assets/img/profile.png">
             </div>
+            
         </div>
     </div>
 
@@ -76,31 +84,33 @@
         <h2 style="text-align: center;">What I do</h2>
             
         <div class="section about">
-            <div class="col column-4 do-service">
-                <div class="do-item">
-                    <a class="do-link">
+            <div class="col column-5 card">
+                <div class="card-item">
+                    
+                    <a class="card-link">
                         <i class="fas fa-code"></i>
                     </a>
-                    <h3>Web Developer</h3>
 
+                    <h3>Web Developer</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam voluptatum non, qui recusandae pariatur nemo atque fugit culpa eos delectus in id ea itaque autem dicta numquam sed deserunt? Fuga! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque animi, incidunt earum culpa eius sequi id atque tempora minima vero inventore odit tenetur praesentium aperiam! Quia repellat cupiditate nobis corporis.</p>
                 </div>
             </div>
 
-            <div class="col column-4 do-service">
-                <div class="do-item">
-                    <a class="do-link">
+            <div class="col column-5 card">
+                <div class="card-item">
+                    
+                    <a class="card-link">
                         <i class="fab fa-android"></i>
                     </a>
-                    <h3>App Developer</h3>
 
+                    <h3>App Developer</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sapiente praesentium. Id laborum, ipsam asperiores a quo earum est. Labore voluptate doloribus recusandae eveniet ullam repellendus! Ea et quasi laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, facilis facere fuga pariatur, corrupti exercitationem sunt a tempore veritatis odit, totam laudantium amet at! Cum error iste laborum est animi?</p>
                 </div>
             </div>
-
         </div>
     </div>
-    
+
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>

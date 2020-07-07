@@ -3,7 +3,7 @@
 html, body{
     height: 100%;
     margin: 0;
-    background-color: #100e17;
+    background-color: #ccc;
 }
 
 p{
@@ -19,6 +19,7 @@ h1{
     font-size: 48px;
     color: #FFF;
     margin-bottom: 0px;
+    margin-top: 0;
 }
 
 h2{
@@ -73,6 +74,10 @@ h3{
     float: initial;
 }
 
+.navbar-mode{
+    padding-left: 50px;
+}
+
 .navbar-link{
     display: block;
     color: #8f8f8f;
@@ -90,7 +95,7 @@ h3{
     color: #FFFFFF;
 }
 
-/*  PROFILE  */
+/*  SECTIONS  */
 
 .intro{
     align-items: center;
@@ -104,6 +109,8 @@ h3{
     align-items: center;
     text-align: center;
 }
+
+/*  PROFILE  */
 
 .picture{
     text-align: center;
@@ -141,6 +148,39 @@ h3{
     font-size: 18px;
 }
 
+.about{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*  CARDS  */
+
+.card{
+    padding: 30px;
+}
+
+.card-item{
+    background-color: #202026;
+    display: table;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(35,35,41,1);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(35,35,41,1);
+    box-shadow: 4px 4px 5px 0px rgba(35,35,41,1);
+}
+
+.card-link{
+    display: block;
+    padding: 0px;
+    font-size: 32px;
+}
+
+/*  ICONS  */
+
 .fab, .fas{
     color: #8f8f8f;
 }
@@ -149,26 +189,55 @@ h3{
     color: #FFF;
 }
 
-.about{
-    display: flex;
-    justify-content: center;
+/*  FORM  */
+
+.form-success{
+    display: none;
 }
 
-.do-service{
-    padding: 30px;
-}
-
-.do-item{
-    background-color: #202026;
-    padding: 35px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 21px 1px rgba(51,51,51,0.68);
-    -moz-box-shadow: 0px 0px 21px 1px rgba(51,51,51,0.68);
-    box-shadow: 0px 0px 21px 1px rgba(51,51,51,0.68);
-}
-
-.do-link{
+.form-input{
     display: block;
-    padding: 0px;
-    font-size: 24px;
+    width: 97%;
+    padding: 2%;
+    font-size: 1rem;
+    background-clip: padding-box;
+    background-color: #100e17;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ececec;
 }
+
+.form-input::placeholder{
+    color: #ececec;
+}
+
+.form-label{
+    display: none;
+}
+
+.form-text-area{
+    height: 100px;
+}
+
+.form-btn{
+    width: 100%;
+    background-color: #ececec;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/*  SWITCH DARK/LIGHT MODE  */
+
+.wrapper {
+    z-index: 10;
+    display: flex;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    align-items: center;
+  }
