@@ -3,7 +3,7 @@
 html, body{
     height: 100%;
     margin: 0;
-    background-color: #ccc;
+    background-color: #ececec;
 }
 
 p{
@@ -11,13 +11,13 @@ p{
     font-weight: 300;
     font-size: 14px;
     padding-top: 10px;
-    color: #FFF;
+    color: #000;
 }
 
 h1{
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
-    color: #FFF;
+    color: #000;
     margin-bottom: 0px;
     margin-top: 0;
 }
@@ -26,7 +26,7 @@ h2{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     font-size: 32px;
-    color: #FFF;
+    color: #000;
     padding: 0;
     margin: 0px;
 }
@@ -35,7 +35,7 @@ h3{
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 24px;
-    color: #FFF;
+    color: #000;
     padding: 0;
     margin: 0px;
 }
@@ -57,14 +57,14 @@ h3{
     width: 100%;
     position: relative;
     overflow: visible;
-    background-color: #FFF;
+    background-color: #000;
 }
 
 .navbar-item-list{
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: #100e17;
+    background-color: #ececec;
     display: flex;
     justify-content: center;
     
@@ -80,7 +80,7 @@ h3{
 
 .navbar-link{
     display: block;
-    color: #8f8f8f;
+    color: #494949;
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
@@ -88,11 +88,11 @@ h3{
 }
 
 .navbar-link:hover:not(.active){
-    color: #FFFFFF;
+    color: #000;
 }
 
 .active{
-    color: #FFFFFF;
+    color: #000;
 }
 
 /*  SECTIONS  */
@@ -120,17 +120,17 @@ h3{
     width: 60%;
     height: auto;
     filter: gray;
-    -webkit-filter: grayscale(100%);
+    -webkit-filter: grayscale(0%);
     transition: filter 0.5s ease-in-out;
     border-style: solid;
     border-radius: 50%;
     border-width: 25px;
-    border-color: #1b1727;
+    border-color: #dfdede;
 }
 
 .profile-picture:hover{
     filter: gray;
-    -webkit-filter: grayscale(0%);
+    -webkit-filter: grayscale(100%);
     transition: filter 0.5s ease-in-out;
 }
 
@@ -163,7 +163,7 @@ h3{
 }
 
 .card-item{
-    background-color: #202026;
+    background-color: #cacaca;
     display: table;
     padding: 35px;
     margin-bottom: 30px;
@@ -182,11 +182,11 @@ h3{
 /*  ICONS  */
 
 .fab, .fas{
-    color: #8f8f8f;
+    color: #494949;
 }
 
 .fab:hover, .fas:hover{
-    color: #FFF;
+    color: #000;
 }
 
 /*  FORM  */
@@ -201,18 +201,18 @@ h3{
     padding: 2%;
     font-size: 1rem;
     background-clip: padding-box;
-    background-color: #100e17;
-    border: 1px solid #ced4da;
+    background-color: #ececec;
+    border: 1px solid #494949;
     border-radius: .25rem;
     height: 30px;
     line-height: 30px;
     margin: 0 0 20px 0;
     font-family: 'Roboto', sans-serif;
-    color: #ececec;
+    color: #494949;
 }
 
 .form-input::placeholder{
-    color: #ececec;
+    color: #494949;
 }
 
 .form-label{
