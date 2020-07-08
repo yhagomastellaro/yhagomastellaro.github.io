@@ -64,33 +64,36 @@
                         <h2>Message sent.</br>Thank you!</h2></br></br></h2>
                     </div>
 
-                    <form action="assets/php/sendMail.php" method="post" name="contact" id="contact" class="form">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfmErdmooJqnqOX2YEnN1DpJhkE0g9SRoyytPBiQg7vHNAsOA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" name="form" id="form" class="form">
                         
                         <div class="col column-12">
                             <label for="inputName" class="form-label">NAME</label>
-                            <input type="text" class="form-input" id="inputName" name="inputName" placeholder="Name">
+                            <input type="text" class="form-input" id="entry.1314221771" name="entry.1314221771" placeholder="Name">
                         </div>
 
                         <div class="col column-12">
                             <label for="inputEmail" class="form-label">EMAIL</label>
-                            <input type="email" class="form-input" id="inputEmail" name="inputEmail" placeholder="Email">
+                            <input type="email" class="form-input" id="entry.2144239635" name="entry.2144239635" placeholder="Email">
                         </div>
 
                         <div class="col column-12">
                             <label for="inputSubject" class="form-label">SUBJECT</label>
-                            <input type="text" class="form-input" id="inputSubject" name="inputSubject" placeholder="Subject">
+                            <input type="text" class="form-input" id="entry.953652185" name="entry.953652185" placeholder="Subject">
                         </div>
 
                         <div class="col column-12">
                             <label for="inputSubject" class="form-label">MESSAGE</label>
-                            <textarea class="form-input form-text-area" id="inputMessage" name="inputMessage" rows="5" placeholder="Your message"></textarea>
+                            <textarea class="form-input form-text-area" id="entry.1010974004" name="entry.1010974004" rows="5" placeholder="Your message"></textarea>
                         </div>
 
                         <div class="col column-12">
-                            <button type="submit" class="form-btn">Send Message</button>
+                            <input type="submit" class="form-btn" value="Send Message">
                         </div>
 
                     </form>
+
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
                 </div>
                 
             </div>
@@ -99,6 +102,13 @@
     </div>
 
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+        $('#form').on('submit', function(e) {
+            $('#form *').fadeOut(2000);
+            $('#form').prepend('<h2>Message sent.</br>Thank you!</h2>');
+        });
+    </script>
 
 </body>
 </html>
